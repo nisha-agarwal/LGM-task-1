@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>The Saffron Boutique</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+91 9090909090</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 7AM - 11PM</span></i>
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>En</li>
+          <li><a href="#">Fr</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">The Saffron Boutique</a></h1>
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+          <li><a class="nav-link scrollto" href="#events">Events</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span>The Saffron Boutique</span></h1>
+          <h2>Delivering great food for more than 18 years!</h2>
+
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in"
+          data-aos-delay="200">
+          <a
+            href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcUFBUXGBcaGhsbGxgbGh0dGhobGxsaIhsaGxsdICwkGx0pIBodJjYlKS4yMzMzGyI5PjsyPSwyMzABCwsLEA4QHhISHjIqJCo7MjIyNTIyMjIyMjQ0MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIALcBEwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAECAwUGB//EAEIQAAIBAgQDBQcCAwYEBwEAAAECEQADBBIhMQVBUSJhcYGRBhMyobHB8ELRI1LhFDNicoLxkqKy0gcVQ1Njo+Ik/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDBAAF/8QALREAAgICAgAFAwMEAwAAAAAAAAECEQMhEjETIkFRYQQycRSBobHR4fAFIzP/2gAMAwEAAhEDEQA/APKQnWiQvOoZYqXvKRlY6JZqIUVRE61cjV1DpjsKjTlqagMF2sVFtreRDmIOcrLrG4VuQPOs7EPqum23Mf7VdSLCQCCQeY2060KBJ2qJ4/Em4ohVU7yNz3GoYDh1xlNxUB1gCRPfFK/A25VUl91+FmXwJFCtUjq3bB71slwkFTOs6RH0rRXQCZ8TzoRczOGJnXnrr1POjM35z/pTVYI6ZZ/aGye7zHJmzZZOXNEZo6xpNUEUTfwbIuc5SvUH786GU0lFRZZ/pVbv2so06kgxHSiEPKs/HYiZVfWfv05etMkTm6QNfxMtKzHQ/nhRmHLHUjQ6jXWgGtjKCNxvFG4diVBJEGBTPonHsLA/35+dB49uz3n5xRMx+fk1n4tyx1Ea9aWPZSbpAqrNamBPY201oXD2jpI0JArXS0AIGkc+njTk4L1A8vU+dXoYEc6AxGKEwp3G8ba9OtGiIncfShQeVskjanx+woTHbr01/IqwMZqq6mZtSABz07tCfOgdLoOwqAIBuN/XrSxg7B1A7yY+lWWFIUA77bz86lirc2yRqVOi+IOsc/8AauGrylOBtkpJygDs6TLbnNHTlyogLykaETHLf0oDETbQo8BwQQFmdRuTtp9aCS4QII7+/wA/CjH3E5UjeUfn5vVqin4Tg7lxYCMSN4g6NqCTsNOvSt3D+zj73GVe74m+w+dbcOOUtpHeNCH3MxUFX2rbMYVST0An6bV0tng9pORY/wCI6eggUTlgQAAOg0FbVj9yOX/kI9RVnNf+XXf5D8vuaVdHSo+FEzfrsnsjy3NIn80oe7cjaiLoygjY/egwdda8Y3NjrcbTeK0bDTNBOCFnlROFjKZoMMS5xSBof3lWWXBFActFReDoaVtwTAPlzqu88Ma4BK4vYIG8QPTTeqXEUbhYI1qvHJB0rmtWEHstrRZNZ6mDRKPI36fegjmJ3gxVgyA5ULFRsWADHxAJE+dC30I5k953pWnMgeddQLDiQQRyis6IzFhEACSDr6ddaOFsHQ+FRuWpWOW/h511AewECQJ0GwB5EbT61q4awgGVwxAErlIHbGqkyDKzuB6iglvbDv0oy2SPiBE6iREjkRO4PWu7DFJEWWh8ThiSAu06/vRXvBJofE4oyEQgE6FiNBPfypUtjTqh0Co2XWTGm9F4hlFti20R368h1rFtWLhuCFZmmY3J8I38q1OMFggG0nUc9OtUVImnpmLasF2gVt28MFUDmKo4RaMswA6d/jPIVqFY+EEnrGg05eVLKdDY4WrAioCknaT9TSw6Lc7Q2nc/4efeaIds4ylMy818D3beP1qXBeHRirQW2XVnCtbYsNJ1hhrpvBrovk6OyLir7QktkmANTy50enDLuvYKFQrS5CAAmA3agwCNwK9OsYO3b0t20T/KoHqdzWL7T2ili7cTW4UK9rtBVgloHMbmDNb/ANKkrbMn6pt0keY8C4cuJvC3cf3ebYhSZIjsjXSRzPOtj2l4KmGtqiIxZnAN5ygWMpOVACSsxuRy3rT/APDnCWwLlzPmuRlAykAKDqVJ+OezPSBW57UcNa9bKqHYrBCK4TMTmGpIMxMxQhhTx3WxJZXyq9GV7DIy2SuRlBOcl21YkAAokfBC7k710bChuCYE2sPbtkQwUZtZ7XPWi3FbsS4xSMmTcmyhhVRq5qrNO2JRXFKnpULBR5HceYPKqng1otaLWkgTHLc7UHhsKbjZV35fnrXhLZ7LIK5IKwMtWqpjsbHpyPfR3AeF+9zsSAAYEiQTz09KouucPduIQGg9TA0BB5dYqnF1YFJXQwwpKTz6U3uCqSevWi7yXnW26JqyO+hk5EMMYnlBMRMVHCWrhW5mtuxSGYBSSqmO0YGg5+dLxG5IotupHwkaa9oyT17uWndRNzDBxIJB1+lMqpcjK2vOd+lTw5RXCXC+WJzKwUDbedx1oPSCnZK4pRBrMRVHEL4mRB0+dat0gqLahXkZQVgyP05Y1zeNYGNsBYADTrvHpodDSqfJDNNFK3ZOoHjtFTtuIqkp1ETGu/hRiNIC8+Z06aDTeuAQv3gIH4Ktw5BM8uVDYq32padIBEa+vWp4VtCRsD56nQHWmsF7NT3Y/O7X6U/uoDdMp79B3VTh3JJDiJ2B3nmPTrT47MEhCZJg+BBn6dKZVRzYGjKWEMDIEfL9/rRxQzvt9hQWCwY95aymc75ZOgmY9J591eo8O/8ADO4TN++q66rbUseX6mgD0NdGN9Ac67OFtYRNCRJO89fCqsThSzqqKAu7GAYOo28Ca0sVaCXLltSSEuOgJ3IViAT3wKv4fux7h96hBXOi8vsMzhnBSO2HadhIjQfMVfxLh4UINHYyYIkAde/+lbqCudxSXHLXM/6ojaOnoIrVmioxpdsjjdy30aGBsoVtWhbUModnI0zszdiOQgGAIgnfeaKv4Q27BVVzRmacuWVzElo03gk81ASYDCs9+HGzbtXVZmIyu67EbEjnPfO2kjcAqzxC7c/u0SNYzOoPaggid4UjUgzCzIAUQhrT7Hl7x6LuHYEW7fvChVmzg8iEHxAdGAOYkbKxABLCMy3bPvbdxCc3vLYQRrIcLGUaADLEAkxB6wS3E7lsAFbEyNFuAkRMKO1OhJAMkgNzma3PY7g9y5cXEXkNtbfatodCzGQHK6ZVGsfIAb1xwTaSJTk0m2du60BjrCvlRhKsWBHUFGB+tH3nI5TQd5/4ichkuHzm2Pua9Vnn0ZnBOE/2dGXMSGYsFmQoOsAbddQKNjVvL6D96a9i1GkzQn9qOsDn9gPtRilFUhXvYQ1UNUC1w8qYq3MijYtEXNQNSe4BVDXugrmzqJ0qo/tFKhZ1HFC0AMq6DaoWsAVUZcoYFYKwNNZ5bwfXpTi8MwA11FaIryMMbWz1cr9hsFhVts2TZjMcgedEcI4Wl3G3FuKrq9hz2h8JlVnQjYaSNfDeooa1OA3Ivr3q4+U/atSinSMzAeEcCuvcuOVynOy3FZQMwbOCch7LalWBzTE67U+D4cFtX1NvIXu28MqmZZMylio3JgHUakDWAJrtxepxdBiQDBkTyI2I76PhoHM87LXbHvkwzixmvB8khSy5SSigsTlEKIg6kjYa7vBOFnGWmuYlVJdmJuKqq8pby5BoCqE6iI1UzvruYjhmHd87WlLZWXmAQxzGQDBM6zVXEvaS1ZYWwjHWGyKAqSrHWSBtrAk6UnDi7k9DW3pdnGcTwFu1h1R1f+0lkzEHsICOypkjIxUyTqCQdSNa5jFqEZUZ83xEsjBhqTBWPnrPcOfo3tX7SD+F7n3V0EhoKZjPNWB2kGIiZU8687xmMDFZtoGEghAVMkkiBrsI5ctzNZpxinotCTfZTawwLwAxgEkbaAGTI2AJFE4fhlw2muERlIhSGzxzYKB8I/BzqOEtEOzqwCrAbMYZp2AHOGAJ6RXQ4B01FwgGCFIBzSSpmOcQRt+qpSb0kWhGLtsxUtPfuW7YQFiyjPKhdyVGY9nWT5daNxCFZRdWQ5JDIxIGuXL0BjUdK9C9m/ZxIW/dJnKSLayO2c4Ny5zNzK0Afpjrt59xbDW0xDiy5IGZ5KFIAOtsqTJHImDqdop5YnSsmpLkwvhXA7dx3Vix/hh1YiFMr2gTmCyN9TGh8+kxWFthpw1y2tqyLmVWyWxeulQAbcCHTNmGQ6Agda4zAX1DFku3AwtgZcg7QKjMk5vghAeRO1dX7CYMt2bmV0ZVuDMzCBr8OWBPZgg9O6qQXohJe5TgfZO5bx1mwSrKjLcAMBYyhnYICJg5ARPLUdoT7Eh1Pj9hWdcxSW095cYQiznI1A5xHM91ZXCvay1eutbyuhzgKWGjSoI2+EkagHr5Vbioa9yfmls8tx5m7dPW5c/62q7hw+Ly+9U4lf4lz/O//UaI4eujeI+9YsX/AKG6X2B6GsOeye4nx25dTW0m9Y6gdoEwMxn5/atmX0/czw9TW4qciORqBpzHWBvrEzPdy5elYjhWHudp8PZYnWWtoT6kSa8443irZRwHSRngZgZJkCOc+POCZ0r0FuJpA15Dl3UcCTbJ5XSRdZwdu3/d27af5EVfoKGs3ZvXh/KLY9Q5+/yqs8UTqfSsvhuOBv4ok6Z7YHgEj7Vr6M/Zt3rgA1MVzuKxdtr/ALvOSwRp0MCchiYjYTRXFMci27lwGWVHYbxIUkT51wrXnDFhceQoaTElydpgco0qObLKNcV+fwUx44zTt/j8nZhU6mnQiOww3Ou/M1zvFcWWuXLakhUIWBu0hSSTvHaiO6s6zfa0AyM2aV7A2YmNCPl1rn9Q1KktHL6dcbb2di9pj+s/SqmwvfUHv9Jod7pO5NadmbRa+GjnVOq8x61UzVA1wAj3vcPnSoelXHHmmFd8yweYPdvXY/XnXHDMIDafL6V1eHtFZ7WYHb8mvNxnoSCVNF8MuReT/UP+RqBmr8G8XEPf9jWmJKXR0/vaGwHExdDFQRDEajfXRh3Ea1ScT3fOgcIFtZgpYyRMkaQJgQo5GqN7IJqi3i+OxCsSmYIAMuUSGnQhjuDJ+lZuPw5uWlY3GX3jEOoE6qNSDMwYBPU1p3cQpU5xKxJ8Br9qqu2LbKqQVCkkZGjU71KeNNt2VjmpJGDxWVsWgvvGy51J02z6banUiuaZcs5j2tPHQ9R966njtgKqJbYxzzOAe0xjkABM79PGuZu51AMQQ28QZ03693Ksc04yo0QkpKx8KpZjIYganWCORMTG5Fd37KcRFtWTs27oVznVAM5yAhM0x+kE85Arh+H3SHJKBhEtp+3Pp3xW3wjFFCwm2R8SjTK2ZSoJ3hthECY5U0HWwSOgwFu6bN21aa5lLq7KtzK38T3maGZhpKgkTr36zlcb4dcUo94PkHZm45uNBVgFBDNoInKI32OlbvCsSlmwWFtc8gP7sAFiNogSTDbEdayeJce95Y91cj3uf9BGmUyp1PMGNxBG9VlGKjvsmpNvRyZtOoK5iMrvK6gDRSGJ5lhIg/y+Nel4bFNgcJmIDu5MsCQhkEqco2PLlqa4W1iBcvXXbLJCELlBUgAE9mADAB07J1O9dfhOKnE2yrdjMVAIyntKcxBWQdQJ06GhjS37+g03VN9HRjFDFYaGBUOvmCDodd9RNCcP4OUuW3e6HCMrBQmWSuqycx2IB8qqs4hbaIhbooO2Y9wnx07qJXGKNSY8Y57DxrRwi65dkVkaujjHyksc6SWPZBltT0AgeZorBp2W/wA32oLEwGXrE7anWtS0sBvH7CvJxP8A7EepJeRkSYE9Kw/7OHZoD/FrENGYmNAJPOtq4sqR10031qrBWBbdQGYy6ElonRhpoBXoSx82r6MiycE67CMD7M2WTNcW7OYwGOUldNSuUFdZroHvaAcgIHgKpvYod9BnGITAnMCeXSP3rTCEcapGOeSU3sNXEGsrg12Wu97yT4ltKsbEgSegJoHhDwHJ3Yg/WmclaFXTNTirk2bgVSxIjKBJMkTHlNc6vvDC+5uiSokpAUSJO+ggVvi+O+kcQKScFJ3ZSGRxVUPjsJautmuJJiJDMpjvykT51Th+HWrbZkSGGxJZo8MxMVM3xUGvDl+QJ+1F8V5nQqlJ6TCGNQJqkXviB3U5T4/gpjdFNGakrQko8XTLCajNVm6KbOKaxaAMXwsO5aQJ12pUdnHWlSVD2H5z9zk8Vh9O+tmyJA8B9KGMbHSetX4bi1u18aloGwA2Hiw768yM3FM9Lim0WOhprRh18R0+5AqjE8bsMAcl1XL83QplO0KNViBrNU4fEuzK2UZM4HIaepPI61eGTWyU4b0bbOf5bkgxsp59c1Dpc7Twrbg/Co/SB/N3U7XcuuUQOrE/Sgm4jmuKgGrQNiIAB8JHfTylXbIJJ+gXibkq6x+lv5QNj1OvlV63j3DSYO/gI0PrQr3z8JZQIOpA6ec0HbNz4Rz7WjqIGkk8+e1c8nHthWPl0gniNv3ouLlWcqEGZ2L7Hrr8q53HYYoAGU6gwTsOuUCBuR1+tb6XLjT724rawkXEBCSSAYjaT61DGYIvbDG7bLBiMmaWIaO0SOyqiIgGazZMkJK72aMeOcdVo57huGVrgDkgEhcwXNBPd311GG4YLYaRMspHwgabQMkqdto86yOHqBmGmsTMcp2mtTDsSD/GVRzU3CpPjodO8U+KcfXsXLjl6Gk2JYNdGVcrPJUn/LqDHlWXxvBWypdbYUll0XZYDZjAXWeg/amGIt5i2pEgRlAJ667VK/eMAhp1B1AAGh5jxq0pJxdkIxakqOZsIWMIp5bDoNdOmhO1dHw6yU93BPafNGkhhbObWe/nWXiL+W67kZtD2SJDHKQJ1HWa18JdJCs2WVkxJkaRG55bVHG0mXyRbRqY7FgtblT2bzN/pCuANJ17XypuKY0MgUAj+KkGDsrKeY1NBswa4hzASWKjqQBI7vi+VX3UOa0oKAi4GgspGmveD/StEpJJmeMG2tBirp4VUedWrtVL715GD7z2cv2ESardZIBMA7npUjTPrXrw6PLyIMuYhewV1BhfQanXvFYvDcQRbJMkF3Ig89NTI1Gm1EXHISQzDKpIkArPPfuih+HkCx8UE7LkDKRmO7FpU+E1zdsjxpF97En3TvsRK8j+nvHfV/DLSizaYk6rLdoE8zosSPEk1lYuRbYwCCQCRuO+PlvzrUZnWxblFjKsFd9jEyeevpU5ydlIQVD4a/mZOSkkEHprB8dqF4VfZw5JY9shZ2AgGJ86tuSlsXGVlUhgpgRIKdNviGvfQHDbmS0e0B2ie47Dfauxyd7YZxTWkH3LpzgCQBy66/1qWMuFUuEcl+ZOn0qm3DTlIJPQ+P7VXj3jDtpqbiie4DQfM0cktUDHDdlvDsQXt5mYFmZmbad94G3P1p718hgAYEwe8c6rwzMLFsDbLmmNiSfsBThc2XSTB8SeXnrTQl5aFnG5WXLeUxBmdt6qxWKy22dddgPEkCk3D7lsMWgZGCsM6zmYSBlmTGx6GQaB4qjJYVTAzMCADJiG1IB01pnOkKsas1MMzMiscskTpSqu32QFjYAbnp40qHMXgzMwji6VM6ArnAgdkHUSdiQOVHcStWmuOyQtsk5FZgcogczrMgme8UNwrDL7oMwmZJInlpEDc6fOiRaTlb+X715Mpvlo9qOPymJcwzMrHJcNsMZIAC6cpkSNuZo43RbtkC2q9rKJMxJJkEd3pQfEcq3LsgAldI65RFE4lS9pI0g6jy3+Zq/Lasz8bTSJ/wBku3BHubrg9Ucj5irhwkDWRpuNNI5dxEV02B4uqXDbLroYyk6f/mrLmDQ3D2XCMSZAzalZ8u115VPJn5JcXT+SkPp+LfJWvg5LE4V1GZ9LbHsN9piORotuFXTbW4LQIB0dCLhIgrHZY863+J4VTbS2AXCknKxTQmNYIHfSwmGsLaRSbiOMxKrcfIxJMSF7oGhG3OprIrd/17G8J6a/oZOB9mWuOq3LtuyCuYzma4ukgMmmUmeulZeLtot17ZFvKCArFhLRz112roUxVs/+kh/zS/8A1TT3MaAsC3bAjUBANj/WovM+X26/JoX06r7v4OS4aqtnDMF2ylrbOOewX81rSwuDZoAKOAdQFdQR55cvrWjieHtnHuwzKdYAJI9F0EnyHWqsElw3Gt5GUyNGBG8xrEbR61RZuSuIrwcX5jSti0in/wDiskj+e8xnyytBrOxSi58NmzaPVWuPHkSF+VdIvsnfEG4VRI1YS5Hio19KA4bg7b4r3DOzpkzF1XKy6NA1LSZA8JpnnypeZ0J4GJ7Ss5ezwnthrkMG0y6iO/Q/k1qrbsA5MijSdYGg71APz5103EuD4S0Gd3uoihYKguxJjdQpPM9KxLvD7BYXLN/3gAMu5W0kCDqbggMNNBB60kpzkrX8FIxhF06/cA4jhgty2bdvYMZXM3TqT301q291oS3myEllgAqQNWy76dYoxLlpZPvrimSGa3cyc4YFELB9T+o86hiPaS7Ztvct3RdT+7i7aQGG3XNbynYzrVY5Lgk7vojPElNuNV2XnQa6dx0PpQeJuxrDH/KCfkKgMZcxCW3BW1odVZz5ZAQOXOYqvE7jPcZ9tAqg6HwBO3Mmp43xfyVntEhcYQD2SeTDcfY6aGrUR1h+zAk7q4Ig6FdZHdv4VlXLgFwAK2WQJ7ucxQqcQzMAQQPA9a2RyyXVGOcI9OzoX4kLd23cRbZIzfBmCnsFS2VwRPag+NBW8V2lhAB8IAMATz276BOOJAQJChS5AYEymhOXSZ0A8astspEk7jY6feuuXO0Co8KZfxO6wRwTK7BdYB2zCefOa1Meyi2iBgSMggA8kM7jqa53GICihAPi1g7jXvNat3FKSMqsF5htT3EEE99VlrbJRXLSJ8QuH3TqSSqpoDsC5XUDkZA17qGwCD3KTInMdDvJMaVdxW7bNh4ZST7saEEyG1HhH0ojhmVLdr3oRBkBW41z3YJIkgGGXMJ2MTEjmAFOk3QXjtpJgz2QdWTpqyyPmO+gOKWwttGGks4gHswAkHLt19a6vCYa2z2znW4pnOqXUJmNIcRpPOPWsrieDt33y22ZRJyW+y76gE5gGk6LyHzNRX1FumqLP6dpadlQtMttUF24oyqWWQVJAkdkjlm086Y3FUZrdyXBMK9pSuWefaIPL9NXYgazLyNDmtXF1GkAle6graA3Njqfv/StMWuNp2QnHdVRLELcmSFJM8yJG2xH3rP4lfDFLeQqyGGMzmzRERpWwlj3ptzlgE5u0ZyzyjTQTWNiCGxCafyz5S30pYytUmdKFbaNWJ17Q7su3zpUUy221yATyDtA9aVN4gOBzvDsTltOPeMoVDPNQzXAAw55ooV8UCe1dxDRtsF81z/tURbOo1g7jkY2pCzWPSdmrdUS4hdLXCyHsuqkjQakdpTHOQT51OxiWClZJ8agLVTFujaCk0dTct2SAzhUzBe3AAkgRmPnvRuHs3Ldso7FgGGQkycpU8+Y0rPtqLlpEJC9hNSeijkKL4cGW21tmZgrKVkbA5wQDzGgrC2bUi2KQGtI0wOtLYUinD8OuttbaNdTCiP9RBPlRy8CuN8RRZ7yx9IH1oHhftBlW4hYZkd17X8oOkGgsX7WMZi4fBF+5qcoZZSaRVTxximzoLWAv2pC4hDb5W7il0P/ABGU8tq0OH+1Vm12b6KhSSDbyuhmPhywynxA3rzHFccZv0k97sT8h+9C2Mc7uAYCwSQBHL1rTjxTjttEMmWMtJHfe03tvbxACWXxNvIZJVxbnTYw0kc4I5ViW/bHEGAGFy5rDMC7GRA7KQPODRHBuHuLcjEWsjdtUhSRAbMO0p3Mea1rPwxFU+8xTHLA7LLbVp3YquhAn/lozyxunv8A38Cxxy7WjHu4rFMofEYpwrAfwreZbgZuTAhSRodz60GmEFwN7uxeuE5DLMgJ0JMmGIjNrJo3EMllrSo2e2SQjGCSiqNTIgmS2sc6Pfj7gCMoBJA0B3AkaD7UOddLv9g8E+31+5zPG7jJb921sI7MdMpzkZ2MyddcqnpDLQ960Rg7dsyrNcZyCIgAQB38jWzjrpvCXdp5OujbCRtAGg0ise7wo/ouyejiG/rV4TjVPRGcZXa36B3CVPurYz/CCIgFTLsdjpMEa0c+MuFYzKF17IRBImY+HqOVYiWbqiApgDqPPx1q5LrhVEGZMju7MT86PBN2mKptKmmHuFIjaeY3oc4X/wCR/OD9RUlbQSIqRT851yikFysGvoDmGTcRM6kSDuBpqoqqxhwNMrgbRMj6UczdkASN5IOrTsCegjbvpk0Og5fvVIutISUb2x1wg6/vT3LUCk94jYT+fOq2xnIiIBMzzA008aZuTiyaUUwy3jbeULdsW7hH6iq5j45lOtC4zFlc3uS6q2ioSOyx2Cxy5ACKq/8ANQBACCNpBOg8xVN7FSmYldHXbl8Z25bVOGOUXdlJ5IyjQjaxFxCtyz71g0gEdrbqjA7TTOzLvhnt9rRkLqzAk9otqY2586bDY9/eLlYwQWJO4Cqx0IgjQHbrROH49cIADusgplzgiI21UmNKEuVtJBjKNJt0FYDHliEF69bhjJa4xUEmM2V8w2ZjPOTPWtJeDsktPvSeYCgc9gIHOsi/imvANcPeGgdwg5VAA0+Zoe2sGBB0Jkd0dD30fPKOtAuKlvZsZfdsMoAYfEDOgIOkcjOv+9ZHDlAxjRlYJm+IEqcq5dR4miLGJC6MhiZkEE7c1MRBPXlWbwS+huOxYAkHQmJzNJ8dq3YcUeMVe32SmlN9/wCDVxcZz8PLaegpUxtMxJEQSY7S9aVUcER4fJlrZq0WKKKeVXLbmvEeQ9NYzPFmpi1R3uqf3dI8jHWMDwly5auC4nmp2Zeh/flXXW7iXLRuWzoSAV5qw3BHnXOFJ5Vfw657tnJzQyxA6hgQT5SPOklLkNGPE1DVbChnxjH4VA8dfpQ7Ox+Jye4aD5fvS2PRjOhS7eLKcjMxDbrPMTyPdWRlZiciMZ7q66AAdBB3038etMHjYAeFXjnrdEni1VnLLwq6RJGUfP0GtaPs9hVDuZLdgjUCNWXl5VqF6Hv4cHUdlv5hp60fHclTFeJR2iHE+IXLItragCJZCoKkszHUEaaZdRBqOKx7+7RwEVjbVpCLIJuMrRI6D50NxK22eWkCFCk8wqgDXyqOKAyWZ/8AbI/+x6pFRpaJScrexsRcNy3beSXDMrxMydUI57A+lJ7zG0hJJ/iOJ5xkt0VgHYAiAqxOaANR6FtJHnRgtIyrmTq0HqQJMDU7Ci5qOmjljctpgWE1BGYNMEbggjr5GjPcruTMenrTpZHwqu8DKP2/epMqKdZYjSF2BG4LH6D1pG+T0OlxVMkblTsIXYINz+E1A3oMBEG3LNv3tV+Cun3vIQHAhQOR6bml6Q12ym4QphRtzP2jYUysD+fk0+JXWqrWh8dKaMhGiVxCRoY189j6VUbUZj2tpPaJ67yddqIcbHv2G5q7hFu3fJBuII7JQOM5gclO25E67aVSFyehZUuwVbDNMA6CSQNh1oXh/HLABTEWHkn4pmBy7OhB8Jrs0wFy2pFtgVMyHXta9HXaO9TWPiOHuYF1LbIIkmyHaOYDWyrT3lBWuEKMk5NjLwfDXQGtkgMJBIkeGoB+dCXvZRtcjhgeQIBkTG47zz51s4MWQT7sqABBWdtZ2Oq0Y1afBhJfPwR8SUX/AHPPsXwm9aLsbdyChWcsjWBusgaT5VloCK9XS731zvHcUiQ9+wHUnLoII37eYSPLf51KeHhtMdT5dnM2XdkEKSVJkb6GI08QavtWbrdpeyRprofQ1qYL+xXc2R2tE8mKQR3eHiKvx+F92FGcOHmCPHnqevXlWaSnFWlotFRk9vZnKbkCQZ0nYzz61UtkEnsFdBygc6NnUfn5vSnXyH3pVlddFHiS9SrD2FyjTry76ephwPU/WlXc2LxRcauw+o8DQ4FX4Q6kdR9O4Vgl0b49luWokVeR+f0FRPpUylFUUoqU001xwx/Pw0x/Pw0/5+Gok/g1+dGgWJhNVm2amT+bn+lIj83NcAgEPUfnfUktiZ3NI/k/tSLfh/ajR2iToDv+/wBdKpOHUx2V0EDszAmdydNZ9anPn47VEvPf9KMU0B0xvdgd8eceew8qZm7/AE+5qLNPf9KgfX6U6QjZbh3h1gxrGnKdDr11quf4cbw/1B/7aiu4jVpEAdZ0qeIbW4FMANJjdu0QDPIdrbvqqROTJNbYkEAbLuyrGg5EirktOLgYKWGbdSGAUmCdCeR50AVAK9+XTrVlliLmhiCx0/wgn7VzToCewzGQKoRSSIVjJAWBueQFWPxVHIS2VN0AS36lJ3VBs7cu7v2rpeHoBaVGQaiWkSSx3LTuam04rzDpqT8pmWeGOvacCTMIdQJ2JI3Yeg796xb3saTqmZfGYHkRPoa6q9hyom3cI3lH7anwk5h5Hyq3DYu7bADllX+bKLqAd5ADj/UIHWrvJ5U4k/DTl5gX2Xwdy1K37rvEKozMVkneDvA8hXUtZSdY8qCwZzKClxbg/nEEHWeW1aN8ELKxmBU6jcAiR5jSaR5nFW2WjiT0kc77R2ltsc620QghC+hJjtQ06Hwq7hvCfeWLdxXZGZZyn+Im5j4+302YVue1+NRsDcVAGuMmXKZ/UQDJ6ak70BwyTYAtkooQKmcCdP1MBuNIHdJ5ipRzyT5KVt/II41NVKNV8GTibT2zDLbY/wCBwG/4HIA/4qDv2bNwhbmh1Ci5mtnXfLMZuWoJ2qHG/aEWsWbTSvYXMzKWQsQN1ENliO0vmNK0uGYkXCY9w1sg5sjs8nlNvLC+JravqpqK5fyZ39PByaRznEPY5GJKkrP+EH5rHzmsqzgDYdrWhy9qR3j9jXc8QwiWrb3LZa0FUsDbPZ207BlDJjlXmz8XuNcZ2KsWbtdkCQDodNtKfxFOLpE5Y1CSbNRjr5fX/aol9T4D70rbq+oMHoe6efnTOhBMxy5z1qKoo2U3bhk01W56VPaEoOJ/P6VK28MDynw3qk3PwVBm/OdY+Jr5Gv8AnQVE/kfvUFeVB6gb1P5/SpUWsifznUT+TUz+AVAny+tdR1jEfh/aon1+QpRP9aRjnr3UaANP+w/ekdO7w3pM3l3Cq58q6gWOW8u871Et/uabw17zUW79T05fnjTULYs09/0pE+f0pmPU+VNmPLQUUgCbvPkKgzeQpp6ev5vTH1P56U6QrYkuZSrD9JDeMGaJxlnJcuR8NxCyN1Eq3r2aFYdfz960Uug2TnEjI2XqrBGHowWPOi3Wxe9GY7x7s76eJMO2nee6i7fCXbM1zMqmeyp7UGfiI205DTrROBW3bVXWLjEQG5JO6gfp38atvXLhVoY5o0HLw8aa29IRpepzGL9nWXtWWW6o5Ahbi+Knfy9KP4HxHFyLedycwAV1kgbsSSM0RyJijcMCWBYAkbkgz4EDetfD2JaQFGh01WekkCR+b0ZZNVKmCGPdq0aLoWEN6/m1F4BGIInbSedDYYXLY7UEdDqPWtLDYpG00U/WsE5yiqR6MIxe2RucKtMc2tu5/wC4hKMY2zEaN4MDTscRbEEpeXyS5/2N/wAtGU7CpPLJxplPDSdoBt460zhT2Ln8r9lu8gHQ+U0dfvZeUj8260PdVHGS4gYHkQCPKdqAbh1y3/cXIA/9N+2ngJ7S+R8qGNJAk2B8W4Ol7NOUyZhwZUxyddY+Y5EDSuVx/subbZkN1IOh0dR/rBVk85rrrnEyn9/ba2P507aeJI1XzFW2b4cZrbhh1Bn6VvhOUUY544yZw1y9ibdu4t9nKsqhWMmYOb4iMzaKBqdJrOXDJc+HU/Ot32zcMyWwMsKSY5sx0nyX51y6o9sypPcVJBrdil5bpbMOaPmq+jXOBjYkVS4YGDz2I51XZ4zcHxZX8Rr6iiLWKe82S2gXmWJkKOu3ypJJrYyaekSgczSrWtYK2ABkzR+o7nvNKoeIV8NmZmpx6UqVEIfgTK9cpIohmpUqhL7jRD7RgD4fWo6ctT1NKlQGIFutR18KalXCsiO71pNHPU0qVMAYyd/l+9QDdNvzlT0qKAyskA9TTETv6cv60qVEUhJPcKUxoPzvNPSpgETpqa0rFv8AhrPwzDDmTmHPukilSoS6Oj2Z+IwFy0S1s6D4gSNuh5MKtwvEBchT2XOnMq3hzHn601Kn9BGaDDWc769In1Io3DMFWELHvYySdzqddaalU5jw7Na1iP06xA9OnrVd2NGGgO4j6a01KorsvegnC8RCkKZynbuP7UTicUcrEbgSO/xpUqWUFyQ6m6ZlYvicLbYnI5OmhO+kaSOu/wAt6tfjQUst1CCu7JBXuMEgjw1pUqr4caI83sZcetyWQNG0mBmPPQHQbb0Di8CurrNpwCc9s5ZjXtAaN5ilSrloHfZx2MxD3HPvGzEH4ognQRPlW5wGyDh2kBgzncAjQKNj9aVKtGfWNV8EMW8jv5K8TwuzpNuJ5qxjwAMkU9myqDLbUAc+/vJOpNKlWZZJNF3jinpFuempUqcU/9k="></a>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="assets/img/about.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Menu</h2>
+          <p>Check Our Tasty Menu</p>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>$5.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/bread-barrel.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Bread Barrel</a><span>$6.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Crab Cake</a><span>$7.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Caesar Selections</a><span>$8.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Tuscan Grilled</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Mozzarella Stick</a><span>$4.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Greek Salad</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach, crisp romaine, tomatoes, and Greek olives
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Spinach Salad</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>Organize Your Events in our Restaurant</p>
+        </div>
+
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Birthday Parties</h3>
+                  <div class="price">
+                    <p><span>$189</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Private Parties</h3>
+                  <div class="price">
+                    <p><span>$290</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Custom Parties</h3>
+                  <div class="price">
+                    <p><span>$99</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Reservation</h2>
+          <p>Book a Table</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up"
+          data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people">
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+          </div>
+          <div class="mb-3">
+          </div>
+          <div class="text-center"><button type="submit">Book a Table</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Some photos from Our Restaurant</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Chefs</h2>
+          <p>Our Proffesional Chefs</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Master Chef</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Patissier</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>Cook</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14010.248254604609!2d77.2295097!3d28.612912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x717971125923e5d!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1632975744266!5m2!1sen!2sin"
+          width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>India Gate, New Delhi, Delhi 110001</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Saturday:<br>
+                  7:00 AM - 11:00 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9090909090</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
+              </div>
+              <div class="my-3">
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>The Saffron Boutique</h3>
+              <p>
+                India Gate, New Delhi, Delhi 110001, India<br><br>
+                <strong>Phone:</strong> +91 9090909090<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Book A Table</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Organize Events</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Careers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>The Saffron Boutique</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
